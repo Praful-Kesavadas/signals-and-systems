@@ -287,16 +287,33 @@ columns=fullflexible
 %\IEEEpeerreviewmaketitle
 %\begin{flushleft}
 \textbf{Question 11.9.1.2:}
-Write the first five terms of the sequence whose terms are represented by $a_n = \frac{n}{n+1}$\\
+Write the first five terms of the sequence whose terms are represented by $x_n = \frac{n}{n+1}$\\
 \textbf{Solution:}
-Given the terms of the sequence are $a_n = \frac{n}{n+1}$ where $n = 1,2,3,4...$\\
-
+Given the terms of the sequence are $x_n = \frac{n}{n+1}$ where $n = 1,2,3,4...$\\
 Now
 \begin{align}
-a_1 &= \frac{1}{2}\\
-a_2 &= \frac{2}{3}\\
-a_3 &= \frac{3}{4}\\
-a_4 &= \frac{4}{5}\\
-a_5 &= \frac{5}{6}
+x_1 &= \frac{1}{2}\\
+x_2 &= \frac{2}{3}\\
+x_3 &= \frac{3}{4}\\
+x_4 &= \frac{4}{5}\\
+x_5 &= \frac{5}{6}
 \end{align}
+Now, 
+\begin{equation}
+u(n) =
+\begin{cases}
+1 &n\geq 0\\
+0 &n < 0\\
+    
+\end{cases}
+\end{equation}
+In terms of $u(n)$, $x_n$ is\\
+\begin{align}
+x_n = u(n) -\frac{u(n)}{n+1}
+\end{align}
+Z-transform is defined as, 
+\begin{equation}
+P(Z) =  \sum_{i=-\infty}^\infty\ P(n).Z^{-n}\
+\end{equation}
+
 \end{document}
