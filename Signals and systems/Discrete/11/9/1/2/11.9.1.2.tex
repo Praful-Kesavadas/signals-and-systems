@@ -312,8 +312,18 @@ In terms of $u(n)$, $x_n$ is\\
 x_n = u(n) -\frac{u(n)}{n+1}
 \end{align}
 Z-transform is defined as, 
-\begin{equation}
+\begin{align}
 P(Z) =  \sum_{i=-\infty}^\infty\ P(n).Z^{-n}\
-\end{equation}
-
+\end{align}
+Here, Z-transform
+\begin{align}
+P(Z) = \sum_{i=1}^\infty\ x(n).Z^{-n}
+\end{align}
+\begin{align}
+= \sum_{i=1}^\infty \frac{n}{n+1} . Z^{-n}
+\end{align}
+On solving, 
+\begin{align}
+P(Z) = \frac{Z}{Z-1} + Z\log{(1-Z^{-1})}\
+\end{align}
 \end{document}
