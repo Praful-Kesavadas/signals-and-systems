@@ -289,41 +289,24 @@ columns=fullflexible
 \textbf{Question 11.9.1.2:}
 Write the first five terms of the sequence whose terms are represented by $x_n = \frac{n}{n+1}$\\
 \textbf{Solution:}
-Given the terms of the sequence are $x_n = \frac{n}{n+1}$ where $n = 1,2,3,4...$\\
-Now
-\begin{align}
-x_1 &= \frac{1}{2}\\
-x_2 &= \frac{2}{3}\\
-x_3 &= \frac{3}{4}\\
-x_4 &= \frac{4}{5}\\
-x_5 &= \frac{5}{6}
-\end{align}
-Now, 
-\begin{equation}
-u(n) =
-\begin{cases}
-1 &n\geq 0\\
-0 &n < 0\\
-    
-\end{cases}
-\end{equation}
+Given the terms of the sequence are $x(n) = \frac{n}{n+1}$ where $n = 0,1,2,3,4...$\\
 In terms of $u(n)$, $x_n$ is\\
-\begin{align}
-x_n = u(n) -\frac{u(n)}{n+1}
-\end{align}
+\begin{align*}
+x(n) = u(n) -\frac{u(n)}{n+1}
+\end{align*}
 Z-transform is defined as, 
-\begin{align}
+\begin{align*}
 P(Z) =  \sum_{i=-\infty}^\infty\ P(n).Z^{-n}\
-\end{align}
+\end{align*}
 Here, Z-transform
-\begin{align}
+\begin{align*}
 P(Z) = \sum_{i=1}^\infty\ x(n).Z^{-n}
-\end{align}
-\begin{align}
+\end{align*}
+\begin{align*}
 = \sum_{i=1}^\infty \frac{n}{n+1} . Z^{-n}
-\end{align}
+\end{align*}
 On solving, 
-\begin{align}
+\begin{align*}
 P(Z) = \frac{Z}{Z-1} + Z\log{(1-Z^{-1})}\
-\end{align}
+\end{align*}
 \end{document}
