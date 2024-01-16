@@ -168,22 +168,30 @@ In terms of $u(n)$, $x_n$ is\\
 \begin{align}
 x(n) = u(n) -\frac{u(n)}{n+1}
 \end{align}
+\begin{align*}
+    x(n) = 
+    \begin{cases}
+        0 & \text{if }x=0\\
+        u(n) -\frac{u(n)}{n+1} & \text{if }x > 0\\
+        \text{not defined } & \text{if }x <0
+    \end{cases}
+\end{align*}\\
 Z-transform is defined as, 
 
-$$ x(n) \xleftrightarrow Z  X(N)$$
+$$ x(n) \xleftrightarrow Z  X(Z)$$
 
 \begin{align}
-P(Z) =  \sum_{i=-\infty}^\infty\ P(n).Z^{-n}\
+X(Z) =  \sum_{i=-\infty}^\infty\ x(n).Z^{-n}\
 \end{align}
 Here, Z-transform
 \begin{align}
-P(Z) = \sum_{i=1}^\infty\ x(n).Z^{-n}
+X(Z) = \sum_{i=1}^\infty\ x(n).Z^{-n}
 \end{align}
 \begin{align}
 = \sum_{i=1}^\infty \frac{n}{n+1} . Z^{-n}
 \end{align}
 On solving, 
 \begin{align}
-P(Z) = \frac{Z}{Z-1} + Z\log{(1-Z^{-1})}\
+X(Z) = \frac{Z}{Z-1} + Z\log{(1-Z^{-1})}\
 \end{align}
 \end{document}
