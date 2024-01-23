@@ -17,7 +17,7 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} 
 \usepackage{listings}
-\usepackage{gvv}                                        
+%\usepackage{gvv}                                        
 \def\inputGnumericTable{}                                 
 \usepackage[latin1]{inputenc}                                
 \usepackage{color}                                            
@@ -62,6 +62,20 @@ A 100 $\ohm$ resistor is connected to $220 V$, $50 Hz$ AC supply.\\
 
 \section*{Solution}
 %\fi
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+   Symbol&Value&Description\\ \hline
+   $V_{rms}$&220V&rms value of voltage\\ \hline
+   $I_{rms}$&$\frac{V_{rms}}{R}$&rms value of current\\ \hline
+   $P_{avg}$&$V_{rms} .I_{rms}$&Average power consumed per cycle\\ \hline
+   $R$&100$\Omega$&Resistance \\\hline
+    \end{tabular}
+    \label{table:1}
+    \caption{Variable description}
+    
+\end{table}
 1)
 \begin{align*}
 I_{rms} = \frac{V_{rms}}{R}\\
@@ -69,28 +83,13 @@ I_{rms} = \frac{V_{rms}}{R}\\
 = 2.2 V
 \end{align*}
 2)
-\begin{align*}
 
-\end{align*}
-\begin{table}[h]
-    \centering
-    \begin{tabular}{|c|c|c|}
-    \hline
-   Symbol&Value&Description\\ \hline
-   $V_{rms}$&Volts&rms value of voltage\\ \hline
-   $I_{rms}$&$\frac{V_{rms}}{R}$&rms value of current\\ \hline
-   $P_{avg}$&$V_{rms} .I_{rms}$&Average power consumed per cycle\\ \hline
-   
 
-    \end{tabular}
-    \caption{Variable description}
-    \label{tab:12.8.6.1}
-\end{table}
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=\columnwidth]{ncert-physics/12/8/6/figs/Figure_1.png}
-    \caption{$y(t)=\cos\brak{2{\pi}\times 10^9t}$}
-    \label{fig:12.8.6.2}
-\end{figure}
+%\begin{figure}[h]
+%    \centering
+%    \includegraphics[width=\columnwidth]{ncert-physics/12/8/6/figs/Figure_1.png}
+%   \caption{$y(t)=\cos\brak{2{\pi}\times 10^9t}$}
+%    \label{fig:12.8.6.2}
+%\end{figure}
 \end{document}
