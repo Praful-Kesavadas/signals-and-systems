@@ -13,10 +13,14 @@
 Write the first five terms of the sequence whose $n^{th}$ terms  $x(n) = \frac{n}{n+1}$\\
 \textbf{Solution:}
 Given the terms of the sequence are $x(n) = \frac{n}{n+1}$ where $n = 0,1,2,3,4...$\\
-In terms of $u(n)$, $x(n)$ is\\
-\begin{align}
-x(n) = u(n) -\frac{u(n)}{n+1}
-\end{align}
+\begin{align*}
+    x(0)=0\\
+    x(1)=\frac{1}{2}\\
+    x(2)=\frac{2}{3}\\
+    x(3)=\frac{3}{4}\\
+    x(4)=\frac{4}{5}
+\end{align*}
+Now,
 \begin{align*}
     x(n) = 
     \begin{cases}
@@ -40,6 +44,12 @@ X(z) = \sum_{i=1}^\infty\ x(n).z^{-n}
 = \sum_{i=1}^\infty \frac{n}{n+1} . z^{-n}
 \end{align}
 On solving, 
+\begin{align*}
+    X(z)&= \frac{z^{-1}}{2} + \frac{2z^{-2}}{3} + \frac{3z^{-3}}{4}+....\\
+    &= z^{-1}-\frac{z^{-1}}{2}+ z^{-2} - \frac{z^{-2}}{3}+...\\
+    &= 1+z^{-1}+z^{-2}+...+[-z^{0} - \frac{z^{-1}}{2} - \frac{z^-2}{3}-....] \\
+\end{align*}
+Applying the formula for logarithmic expansion and sum to infinite terms of a GP,
 \begin{align}
 X(z) = \frac{1}{1-z^{-1}} + z\log{(1-z^{-1})}\
 \end{align}
