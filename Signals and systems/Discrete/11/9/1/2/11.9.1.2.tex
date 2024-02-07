@@ -2,7 +2,7 @@
 \usepackage{amsmath}
 \usepackage{empheq}
 \usepackage{graphicx}
-\usepackage{physics}
+\usepackage{gvv}
 \begin{document}
 \title{
 \Huge\textbf{Discrete Assignment}\\
@@ -13,7 +13,7 @@
 \maketitle
 
 \textbf{Question 11.9.1.2:}
-Write the first five terms of the sequence whose $n^{th}$ terms  $x(n) = \frac{n}{n+1}$\\
+Write the first five terms of the sequence whose $n^{th}$ terms  $x\brak{n} = \frac{n}{n+1}$\\
 \textbf{Solution:}
 \begin{table}[ht]
   \centering
@@ -21,18 +21,18 @@ Write the first five terms of the sequence whose $n^{th}$ terms  $x(n) = \frac{n
     \hline
     \textbf{Term} & \textbf{Value} \\
     \hline
-    $x(n)$ & $\frac{n}{n+1}$$u(n)$ \\
+    $x\brak{n}$ & $\frac{n}{n+1}$$u\brak{n}$ \\
     \hline
   \end{tabular}
   \caption{Input Parameters: General term}
 \end{table}\\
 Z-transform is defined as,\\
-$$ x(n) \xleftrightarrow z  X(z)$$
+$$ x\brak{n} \xleftrightarrow z  X(z)$$
 Here, Z-transform
 \begin{align}
-X(z) &= \sum_{i=1}^\infty\ x(n).z^{-n}\\
+X(z) &= \sum_{i=1}^\infty\ x\brak{n}.z^{-n}\\
 &= \sum_{i=1}^\infty \frac{n}{n+1} . z^{-n}\\
-&= \sum_{i=1}^\infty u(n).z^{-n} - \frac{1}{n+1} u(n).z^{-n}
+&= \sum_{i=1}^\infty u\brak{n}.z^{-n} - \frac{1}{n+1} u\brak{n}.z^{-n}
 \end{align}
 On solving, 
 \begin{align}

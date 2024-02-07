@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.6)  7 FEB 2024 11:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.6)  7 FEB 2024 12:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -155,21 +155,14 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen168
 \Gin@req@width=\dimen169
-)
-(/usr/share/texlive/texmf-dist/tex/latex/physics/physics.sty
-Package: physics 
-
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-01-21 L3 programming layer (loader) 
-
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+) (./gvv.sty
+\c@matchleft=\count279
+\c@matchright=\count280
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count279
+\l__color_backend_stack_int=\count281
 \l__pdf_internal_box=\box55
-))
-Package: xparse 2022-01-12 L3 Experimental document command parser
-))
+)
 (./11.9.1.2.aux)
 \openout1 = `11.9.1.2.aux'.
 
@@ -187,20 +180,20 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
-\Hy@linkcounter=\count280
+\Hy@linkcounter=\count282
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count281
+\scratchcounter=\count283
 \scratchdimen=\dimen170
 \scratchbox=\box56
-\nofMPsegments=\count282
-\nofMParguments=\count283
+\nofMPsegments=\count284
+\nofMParguments=\count285
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count284
+\MPscratchCnt=\count286
 \MPscratchDim=\dimen171
-\MPnumerator=\count285
-\makeMPintoPDFobject=\count286
+\MPnumerator=\count287
+\makeMPintoPDFobject=\count288
 \everyMPtoPDFconversion=\toks23
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -228,13 +221,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./figs/graph1.png>]
 (./11.9.1.2.aux) ) 
 Here is how much of TeX's memory you used:
- 3519 strings out of 478287
- 54682 string characters out of 5849290
- 361577 words of memory out of 5000000
- 21708 multiletter control sequences out of 15000+600000
+ 2952 strings out of 478287
+ 47876 string characters out of 5849290
+ 352717 words of memory out of 5000000
+ 21145 multiletter control sequences out of 15000+600000
  474643 words of font info for 47 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 68i,11n,77p,330b,265s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 1144 hyphenation exceptions out of 8191
+ 55i,11n,62p,223b,265s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
