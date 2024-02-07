@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.6)  7 FEB 2024 01:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.6)  7 FEB 2024 11:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -156,28 +156,37 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 \Gin@req@height=\dimen168
 \Gin@req@width=\dimen169
 )
+(/usr/share/texlive/texmf-dist/tex/latex/physics/physics.sty
+Package: physics 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-01-21 L3 programming layer (loader) 
+
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count279
 \l__pdf_internal_box=\box55
-)
+))
+Package: xparse 2022-01-12 L3 Experimental document command parser
+))
 (./11.9.1.2.aux)
 \openout1 = `11.9.1.2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
-LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
 \Hy@linkcounter=\count280
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -202,28 +211,30 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-(./tables/table1.tex)
-<figs/graph.png, id=1, 462.528pt x 346.896pt>
-File: figs/graph.png Graphic file (type png)
-<use figs/graph.png>
-Package pdftex.def Info: figs/graph.png  used on input line 43.
-(pdftex.def)             Requested size: 241.49895pt x 181.12799pt.
+Underfull \hbox (badness 10000) in paragraph at lines 15--30
 
+ []
+
+<figs/graph1.png, id=1, 462.528pt x 346.896pt>
+File: figs/graph1.png Graphic file (type png)
+<use figs/graph1.png>
+Package pdftex.def Info: figs/graph1.png  used on input line 43.
+(pdftex.def)             Requested size: 345.0pt x 258.76335pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./figs/graph.png>]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./figs/graph1.png>]
 (./11.9.1.2.aux) ) 
 Here is how much of TeX's memory you used:
- 2874 strings out of 478287
- 47085 string characters out of 5849290
- 350891 words of memory out of 5000000
- 21069 multiletter control sequences out of 15000+600000
+ 3519 strings out of 478287
+ 54682 string characters out of 5849290
+ 361577 words of memory out of 5000000
+ 21708 multiletter control sequences out of 15000+600000
  474643 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,62p,223b,286s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,11n,77p,330b,265s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
@@ -238,7 +249,7 @@ ic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
 fb>
-Output written on 11.9.1.2.pdf (2 pages, 150357 bytes).
+Output written on 11.9.1.2.pdf (2 pages, 153378 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  49 compressed objects within 1 object stream
