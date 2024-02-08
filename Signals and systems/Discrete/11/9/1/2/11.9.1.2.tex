@@ -26,8 +26,6 @@ Write the first five terms of the sequence whose $n^{th}$ terms  $x\brak{n} = \f
   \end{tabular}
   \caption{Input Parameters: General term}
 \end{table}\\
-Z-transform is defined as,\\
-$$ x\brak{n} \xleftrightarrow z  X(z)$$
 Here, Z-transform
 \begin{align}
 X(z) &= \sum_{i=1}^\infty\ x\brak{n}.z^{-n}\\
@@ -36,7 +34,9 @@ X(z) &= \sum_{i=1}^\infty\ x\brak{n}.z^{-n}\\
 \end{align}
 On solving, 
 \begin{align}
-X(z) = \frac{1}{1-z^{-1}} + z\log{(1-z^{-1})}\
+Z\{u\brak{n}\} &= \frac{1}{1-z^{-1}}\\
+Z\{\frac{-1}{n+1}.u\brak{n}\} &= z\log(1-z^{-1})\\
+X(z) &= \frac{1}{1-z^{-1}} + z\log{(1-z^{-1})}\
 \end{align}
 \begin{figure}[h]
     \centering
