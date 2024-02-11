@@ -290,5 +290,26 @@ columns=fullflexible
 The pth, qth and rth terms of an AP are a,b,c respectively. Show that
 \begin{align*} (q-r)a + (r-p)b +(p-q)c =0 \end{align*}
 \solution\\
+The AP has the following parameters
+\begin{table}[ht!]
+    \centering
+    \input{tables/table1.tex}
+    \caption{Input Parameters}
+\end{table}
 
+Now,
+\begin{align}
+    x(p)= x(0)+pd = a\\
+    x(q)= x(0)+qd = b\\
+    x(r)= x(0)+rd = c\\
+    (p-q)d= a-b \implies p-q= \frac{a-b}{d}\\
+    (q-r)d= b-c \implies q-r= \frac{b-c}{d}\\
+    (r-p)d= c-a \implies r-p= \frac{c-a}{d}
+\end{align}
+Now, adding (4),(5) and (6),
+\begin{align}
+    (q-r)a + (r-p)b + (p-q)c = \frac{b-c}{d}.a +  \frac{c-a}{d}.b + \frac{a-b}{d}.c
+    &= 0
+\end{align}
+Hence proved
 \end{document}
