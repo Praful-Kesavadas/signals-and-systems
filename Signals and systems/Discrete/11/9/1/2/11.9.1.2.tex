@@ -54,14 +54,13 @@
 
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
-\textbf{Question 11.9.1.2:}
+
+\vspace{3cm}
+\textbf{Question : 11.9.1.2:}\\
 Write the first five terms of the sequence whose $n^{th}$ terms  $x\brak{n} = \frac{n}{n+1}$\\
-\textbf{Solution:}
-\begin{table}[ht]
-  \centering
-  \input{tables/table1.tex}
-  \caption{Input Parameters: General term}
-\end{table}\\
+\solution\\
+\input{tables/table1.tex}
+\vspace{1cm}
 Here, Z-transform
 \begin{align}
 X(z) &= \sum_{i=-\infty}^\infty\ x\brak{n}.z^{-n}\\
@@ -74,7 +73,7 @@ u\brak{n} &\xleftrightarrow Z  \frac{1}{1-z^{-1}}, \quad{|z|>1}\\
 \frac{-1}{n+1}.u\brak{n} &\xleftrightarrow Z  z\log(1-z^{-1}), \quad{|z|>1}\\
 X(z) &= \frac{1}{1-z^{-1}} + z\log{(1-z^{-1})} ,\quad{|z|>1}
 \end{align}
-\begin{figure}
+\begin{figure}[ht]
     \centering
     \includegraphics[width=\columnwidth]{figs/graph1.png}
     \caption{Stem plot for x(n)}
