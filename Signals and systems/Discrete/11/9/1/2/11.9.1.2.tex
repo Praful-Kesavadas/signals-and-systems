@@ -64,8 +64,8 @@ Write the first five terms of the sequence whose $n^{th}$ terms  $x\brak{n} = \f
 Here, Z-transform
 \begin{align}
 X(z) &= \sum_{i=-\infty}^\infty\ x\brak{n}.z^{-n}\\
-&= \sum_{i=1}^\infty \frac{n}{n+1} . z^{-n}\\
-&= \sum_{i=1}^\infty u\brak{n}.z^{-n} - \frac{1}{n+1} u\brak{n}.z^{-n}
+&= \sum_{i=-\infty}^\infty \frac{n}{n+1}.u(n). z^{-n}\\
+&= \sum_{i=-\infty}^\infty u\brak{n}.z^{-n} - \frac{1}{n+1} u\brak{n}.z^{-n}
 \end{align}
 Now, 
 \begin{align}
