@@ -58,22 +58,22 @@
 \textbf{Question : 11.9.1.2:}\\
 Write the first five terms of the sequence whose $n^{th}$ terms  $x\brak{n} = \frac{n}{n+1}$\\
 \solution\\
-\begin{table}[ht]
+\begin{table}[ht!]
 \centering
 \input{tables/table1.tex}
 \caption{Input Parameters}
-\end{table}
+\end{table}\\
 Here, Z-transform
 \begin{align}
 X(z) &= \sum_{i=-\infty}^\infty\ x\brak{n}.z^{-n}\\
-&= \sum_{i=-\infty}^\infty \frac{n}{n+1}.u(n). z^{-n}\\
-&= \sum_{i=-\infty}^\infty u\brak{n}.z^{-n} - \frac{1}{n+1} u\brak{n}.z^{-n}
+&= \sum_{i=-\infty}^\infty \frac{n+1}{n+2}.u(n). z^{-n}\\
+&= \sum_{i=-\infty}^\infty u\brak{n}.z^{-n} - \frac{1}{n+2} u\brak{n}.z^{-n}
 \end{align}
 Now, 
 \begin{align}
 u\brak{n} &\xleftrightarrow Z  \frac{1}{1-z^{-1}}, \quad{|z|>1}\\
-\frac{-1}{n+1}.u\brak{n} &\xleftrightarrow Z  z\log(1-z^{-1}), \quad{|z|>1}\\
-X(z) &= \frac{1}{1-z^{-1}} + z\log{(1-z^{-1})} ,\quad{|z|>1}
+\frac{-1}{n+2}.u\brak{n} &\xleftrightarrow Z  z+z^2\log(1-z^{-1}), \quad{|z|>1}\\
+X(z) &= \frac{1}{1-z^{-1}} + z+ z^2\log{(1-z^{-1})} ,\quad{|z|>1}
 \end{align}
 \begin{figure}[ht!]
     \centering
