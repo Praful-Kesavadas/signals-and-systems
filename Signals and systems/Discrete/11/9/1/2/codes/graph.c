@@ -5,12 +5,8 @@ int main() {
     double x[5];  // To store the first five terms of the sequence
 
     // Calculate the values for n >= 0
-    for (n = 0; n < 5; n++) {
-        if (n == 0) {
-            x[n] = 0.0; // Set the value to 0 at n = 0
-        } else {
-            x[n] = (double)n / (n + 1);
-        }
+    for (n = 0; n < 5; n++) {       
+            x[n] = (double)(n+1) / (n + 2);     
     }
 
     // Open a file for writing

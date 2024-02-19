@@ -56,24 +56,31 @@
 \renewcommand{\thetable}{\theenumi}
 
 \textbf{Question : 11.9.1.2:}\\
-Write the first five terms of the sequence whose $n^{th}$ terms  $x\brak{n} = \frac{n}{n+1}$\\
+Write the first five terms of the sequence whose $n^{th}$ terms  $a_n = \frac{n}{n+1}$\\
 \solution\\
-\begin{table}[ht]
+\begin{table}[ht!]
 \centering
 \input{tables/table1.tex}
 \caption{Input Parameters}
-\end{table}
+\end{table}\\
 Here, Z-transform
 \begin{align}
 X\brak{z} &= \sum_{n=-\infty}^\infty\ x\brak{n}.z^{-n}\\
-&= \sum_{n=-\infty}^\infty \frac{n}{n+1}.u\brak{n}. z^{-n}\\
-&= \sum_{n=-\infty}^\infty u\brak{n}.z^{-n} - \frac{1}{n+1} u\brak{n}.z^{-n}
+&= \sum_{n=-\infty}^\infty \frac{n+1}{n+2}.u\brak{n}. z^{-n}\\
+&= \sum_{n=-\infty}^\infty u\brak{n}.z^{-n} - \frac{1}{n+2} u\brak{n}.z^{-n}
 \end{align}
 Now, 
 \begin{align}
-u\brak{n} &\xleftrightarrow Z  \frac{1}{1-z^{-1}}, \quad{|z|>1}\\
-\frac{-1}{n+1}.u\brak{n} &\xleftrightarrow Z  z\log(1-z^{-1}), \quad{|z|>1}\\
-X\brak{z} &= \frac{1}{1-z^{-1}} + z\log{(1-z^{-1})} ,\quad{|z|>1}
+u\brak{n} &\xleftrightarrow Z  \frac{1}{1-z^{-1}}, \quad{|z|>1}
+\end{align}
+\begin{align*}
+\sum_{n=-\infty}^\infty - \frac{1}{n+2} u\brak{n}.z^{-n} &= -\frac{1}{2}-\frac{z^{-1}}{3}-\frac{z^{-2}}{4}...\\
+&= z^2[-z^{-1}-\frac{z^{-2}}{2}-\frac{z^{-3}}{3}...]+z \\
+&= z+ z^2\log(1-z^{-1})
+\end{align*}
+\begin{align}
+\frac{-1}{n+2}.u\brak{n} &\xleftrightarrow Z  z+z^2\log(1-z^{-1}), \quad{|z|>1}\\
+X\brak{z} &= \frac{1}{1-z^{-1}} + z+ z^2\log{(1-z^{-1})} ,\quad{|z|>1}
 \end{align}
 \begin{figure}[ht!]
     \centering
