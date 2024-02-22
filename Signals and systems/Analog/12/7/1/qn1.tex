@@ -1,7 +1,6 @@
-
 \let\negmedspace\undefined
 \let\negthickspace\undefined
-\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
 \usepackage{algorithmic}
@@ -15,20 +14,19 @@
 \usepackage{gensymb}
 \usepackage{comment}
 \usepackage[breaklinks=true]{hyperref}
-\usepackage{tkz-euclide} 
+\usepackage{tkz-euclide}
 \usepackage{listings}
-%\usepackage{gvv}                                        
-\def\inputGnumericTable{}                                 
-\usepackage[latin1]{inputenc}                                
-\usepackage{color}                                            
-\usepackage{array}                                            
-\usepackage{longtable}                                       
-\usepackage{calc}                                             
-\usepackage{multirow}                                         
-\usepackage{hhline}                                           
-\usepackage{ifthen}                                           
+\usepackage{gvv}
+\def\inputGnumericTable{}
+\usepackage[latin1]{inputenc}
+\usepackage{color}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{calc}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{ifthen}
 \usepackage{lscape}
-\usepackage[export]{adjustbox}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{problem}{Problem}
@@ -43,53 +41,37 @@
 \theoremstyle{remark}
 \newtheorem{rem}{Remark}
 \begin{document}
-\parindent 0px
+
 \bibliographystyle{IEEEtran}
+\vspace{3cm}
 
 \title{Assignment\\[1ex]12.7 - 1}
 \author{EE23BTECH11049 - Praful Kesavadas$^{}$% <-this % stops a space
 }
 \maketitle
-\newpage
 \bigskip
 
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
-\section*{Question}
+\textbf{Q 12.7.1:}
 A 100 $\ohm$ resistor is connected to $220 V$, $50 Hz$ AC supply.\\
 (1) What is the rms value of current in the circuit?\\
 (2) What is the net power consumed over a full cycle?
 
 \solution\\
 %\fi
-\begin{table}[ht]
+\begin{table}[htbp]
     \centering
-    \begin{tabular}{|c|c|c|}
-    \hline
-   Symbol&Value&Description\\ \hline
-   $V_{rms}$&220V&rms value of voltage\\ \hline
-   $I_{rms}$&$\frac{V_{rms}}{R}$&rms value of current\\ \hline
-   $P_{avg}$&$V_{rms} .I_{rms}$&Average power consumed per cycle\\ \hline
-   $R$&100$\Omega$&Resistance \\\hline
-    \end{tabular}
+    \input{tables/table1.tex}
     \label{table:1}
-    \caption{Variable description}
-    
-\end{table}
+    \caption{Variable description}   
+\end{table}\\
 1)
 \begin{align*}
-I_{rms} = \frac{V_{rms}}{R}\\
-  = \frac{220 V}{100 \ohm}\\
-= 2.2 V
+I_{rms} &= \frac{V_{rms}}{R}\\
+  &= \frac{220 V}{100 \ohm}\\
+&= 2.2 V
 \end{align*}
 2)
 
-
-
-%\begin{figure}[h]
-%    \centering
-%    \includegraphics[width=\columnwidth]{ncert-physics/12/8/6/figs/Figure_1.png}
-%   \caption{$y(t)=\cos\brak{2{\pi}\times 10^9t}$}
-%    \label{fig:12.8.6.2}
-%\end{figure}
 \end{document}
