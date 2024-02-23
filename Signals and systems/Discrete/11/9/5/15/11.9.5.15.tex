@@ -132,17 +132,68 @@ The AP has the following parameters
 
 Now,
 \begin{align}
-    x\brak{0}+pd &= a \label{eq:"11.9.5.15eq1"} \\
-    x\brak{0}+qd &= b \label{eq:"11.9.5.15eq2"} \\
-    x\brak{0}+rd &= c \label{eq:"11.9.5.15eq3"} \\
-    p-q &= \frac{a-b}{d} \label{eq:"11.9.5.15eq4"} \\
-    q-r &= \frac{b-c}{d} \label{eq:"11.9.5.15eq5"} \\
-    r-p &= \frac{c-a}{d} \label{eq:"11.9.5.15eq6"}
+    x\brak{0}+pd &= a \label{eq:11.9.5.15.1} \\
+    x\brak{0}+qd &= b \label{eq:11.9.5.15.2} \\
+    x\brak{0}+rd &= c \label{eq:11.9.5.15.3} \\
 \end{align}
-Now, from \eqref{eq:"11.9.5.15eq4"}, \eqref{eq:"11.9.5.15eq5"} and \eqref{eq:"11.9.5.15eq6"},
+which can be represented as,
 \begin{align}
-    \brak{q-r}a + \brak{r-p}b + \brak{p-q}c &= \frac{b-c}{d}.a +  \frac{c-a}{d}.b + \frac{a-b}{d}.c \label{eq:"11.9.5.15eq7"}\\
-    &= 0
+    &x\brak{0}+p.d+a.\brak{-1}=0\\
+    &x\brak{0}+q.d+b.\brak{-1}=0\\
+    &x\brak{0}+r.d+c.\brak{-1}=0
+\end{align}
+resulting in the matrix equation,
+\begin{align}
+    \myvec{1&p&a\\1&q&b\\1&r&c\\}\vec{x}=0\label{eq:11.9.5.15.4}
+\end{align}
+where,
+\begin{align}
+    \vec{x}=\myvec{x\brak{0}\\d\\-1}
+\end{align}
+solving the equations \eqref{eq:11.9.5.15.1},\eqref{eq:11.9.5.15.2} and \eqref{eq:11.9.5.15.3} by row reducing the matrix in $\eqref{eq:11.9.5.15.4}$,
+    \begin{align}
+    \myvec{
+        1&p&a\\
+        1&q&b\\
+        1&r&c\\
+    }
+    \xleftrightarrow[R_{2}\leftarrow R_2 - R_1]{ R_{3}\leftarrow R_3 - R_1}
+    \myvec{
+        1&p&a\\
+        0&q-p&b-a\\
+        0&r-p&c-a\\
+    }\\
+   \xleftrightarrow{R_{2}\leftarrow \frac{R_2}{q-p}} 
+    \myvec{
+        1&p&a\\
+        0&1&\frac{b-a}{q-p}\\
+        0&r-p&c-a\\
+    }\\
+    \xleftrightarrow{R_1\leftarrow R_1 - p.R_2}
+    \myvec{
+       1&0&a- p. \frac{b-a}{q-p}\\
+       0&1&\frac{b-a}{q-p}\\
+       0&r-p&c-a\\
+    }\\
+    \xleftrightarrow{R_{3}\leftarrow R_{3}-\brak{r-p}.R_2}
+    \myvec{
+       1&0&a- p. \frac{b-a}{q-p}\\
+       0&1&\frac{b-a}{q-p}\\
+       0&0&\brak{c-a} - \frac{\brak{r-p}\brak{b-a}}{q-p}\\
+    }\\
+    \implies
+    \myvec{
+          1&0&\frac{aq-pb}{q-p}\\
+       0&1&\frac{b-a}{q-p}\\
+       0&0&\frac{a\brak{r-q} + b\brak{p-r} + c\brak{q-p}}{q-p}\\
+    }
+\end{align}
+After row reduction of matrix we get,
+\begin{align}
+    x\brak{0}=\frac{aq-pb}{q-p}\\
+    d=\frac{b-a}{q-p}\\
+    \frac{a\brak{r-q} + b\brak{p-r} + c\brak{q-p}}{q-p}=0\\
+    \therefore{\brak{q-r}a + \brak{r-p}b +\brak{p-q}c =0}=0
 \end{align}
 Hence proved
 \end{document}
