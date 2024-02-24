@@ -144,7 +144,7 @@ which can be represented as,
 \end{align}
 resulting in the matrix equation,
 \begin{align}
-    \myvec{1&p&a\\1&q&b\\1&r&c\\}\vec{x}=0\label{eq:11.9.5.15.4}
+    \myvec{1&p&a\\1&q&b\\1&r&c\\}\vec{x}=\vec{0}\label{eq:11.9.5.15.4}
 \end{align}
 where,
 \begin{align}
@@ -157,31 +157,31 @@ solving the equations \eqref{eq:11.9.5.15.1},\eqref{eq:11.9.5.15.2} and \eqref{e
         1&q&b\\
         1&r&c\\
     }
-    \xleftrightarrow[R_{2}\leftarrow R_2 - R_1]{ R_{3}\leftarrow R_3 - R_1}
+    &\xleftrightarrow[R_{2}\leftarrow R_2 - R_1]{ R_{3}\leftarrow R_3 - R_1}
     \myvec{
         1&p&a\\
         0&q-p&b-a\\
         0&r-p&c-a\\
     }\\
-   \xleftrightarrow{R_{2}\leftarrow \frac{R_2}{q-p}} 
+   &\xleftrightarrow{R_{2}\leftarrow \frac{R_2}{q-p}} 
     \myvec{
         1&p&a\\
         0&1&\frac{b-a}{q-p}\\
         0&r-p&c-a\\
     }\\
-    \xleftrightarrow{R_1\leftarrow R_1 - p.R_2}
+    &\xleftrightarrow{R_1\leftarrow R_1 - p.R_2}
     \myvec{
        1&0&a- p. \frac{b-a}{q-p}\\
        0&1&\frac{b-a}{q-p}\\
        0&r-p&c-a\\
     }\\
-    \xleftrightarrow{R_{3}\leftarrow R_{3}-\brak{r-p}.R_2}
+    &\xleftrightarrow{R_{3}\leftarrow R_{3}-\brak{r-p}.R_2}
     \myvec{
        1&0&a- p. \frac{b-a}{q-p}\\
        0&1&\frac{b-a}{q-p}\\
        0&0&\brak{c-a} - \frac{\brak{r-p}\brak{b-a}}{q-p}\\
     }\\
-    \implies
+    &\implies
     \myvec{
           1&0&\frac{aq-pb}{q-p}\\
        0&1&\frac{b-a}{q-p}\\
