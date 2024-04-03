@@ -78,7 +78,7 @@ apt install python3-cffi python3-soundfile
 \label{input_sound}
 \item The sound file used for this code is obtained from the below link
 \begin{lstlisting}
-$https://github.com/VINAYKURREiith/Vinay1/blob/master/audio-filter/codes/vinay.wav
+$https://github.com/Praful-Kesavadas/signals-and-systems/blob/master/Signals%20and%20systems/Audio-Filter/codes/Praful_Singing.wav
 \end{lstlisting}
 
 \item
@@ -89,24 +89,24 @@ Upload the sound file that you downloaded in Problem  in the spectrogram  and pl
 
 \solution 
 The audio file is analyzed using spectrogram using the online platform \href{https://academo.org/demos/spectrum-analyzer}{\url{https://academo.org/demos/spectrum-analyzer}}.\\
-There are a lot of yellow lines between 440 Hz to 5KHz.  These represent the synthesizer key tones. Also, the key strokes are audible along with background noise.\\
-\begin{figure}[ht!]
+There are a lot of yellow lines between 440 Hz to 1KHz.  These represent the synthesizer key tones. Also, the key strokes are audible along with background noise.\\
+\begin{figure}[H]
 	\centering
-    \includegraphics[width=\columnwidth]{figs/before.png }
+    \includegraphics[width=\columnwidth]{figs/Sound_before_filtering.png }
     \caption{Spectrogram of the audio file before Filtering}
     \label{fig:before_filter_plot}
 \end{figure}
 \item 
 \label{Python code}
 A Python Code is written to achieve Audio Noise Filtering 
-\lstinputlisting{codes/3.py}\label{prob:audio_filter_problem}
+\lstinputlisting{codes/2.3.py}\label{prob:audio_filter_problem}
 \item
-The output of the python script in Problem \ref{prob:output} is the audio file filtered.wav. Play the file in the spectrogram in Problem \ref{prob:spectrogram}. What do you observe?
+The output of the python script in Problem \ref{prob:audio_filter_problem} is the audio file Sound-with-Reduced-noise.wav. Play the file in the spectrogram in Problem \ref{prob:spectrogram}. What do you observe?
 \\
-\solution The key strokes as well as background noise is subdued in the audio.  Also,  the signal is blank for frequencies above 5 kHz.
-\begin{figure}[ht!]
+\solution The key strokes as well as background noise is subdued in the audio.  Also,  the signal is blank for frequencies above 1 kHz.
+\begin{figure}[H]
 	\centering
-    \includegraphics[width=\columnwidth]{figs/after.png }
+    \includegraphics[width=\columnwidth]{figs/Sound_after_filtering.png }
     \caption{Spectrogram of the audio file before Filtering}
     \label{fig:after_filter_plot}
 \end{figure}
@@ -128,11 +128,11 @@ Sketch $y(n)$.\\
 Solve\\
 \solution  The C code calculates $y\brak{n}$  and generates values in a text file.
 \begin{lstlisting}
-https://github.com/VINAYKURREiith/Vinay1/blob/master/audio-filter/codes/n.c
+https://github.com/Praful-Kesavadas/signals-and-systems/blob/master/Signals%20and%20systems/Audio-Filter/codes/3.c
 \end{lstlisting} 
 The following code plots \eqref{prob:2.1} and \eqref{prob:2.2}
 \begin{lstlisting}
-https://github.com/VINAYKURREiith/Vinay1/blob/master/audio-filter/codes/n.py
+https://github.com/Praful-Kesavadas/signals-and-systems/blob/master/Signals%20and%20systems/Audio-Filter/codes/3.py
 \end{lstlisting}
 
 \begin{figure}[H]
@@ -251,7 +251,7 @@ known as the {\em Discret Time Fourier Transform} (DTFT) of $x(n)$.
 \\
 \solution The following code plots the magnitude of transfer function.
 \begin{lstlisting}
-https://github.com/VINAYKURREiith/Vinay1/blob/master/audio-filter/codes/m.py
+https://github.com/Praful-Kesavadas/signals-and-systems/blob/master/Signals%20and%20systems/Audio-Filter/codes/4.5.py
 \end{lstlisting}
 Substituting $z = e^{j \omega}$ in \eqref{eq:freq_resp}, we get
 \begin{align}
@@ -267,7 +267,7 @@ Substituting $z = e^{j \omega}$ in \eqref{eq:freq_resp}, we get
 Therefore its fundamental period is $2\pi$ , which verifies that DTFT of a signal is always periodic.
 \begin{figure}[H]
 \centering
-\includegraphics[width=\columnwidth]{figs/H(z)_3.5.png}
+\includegraphics[width=\columnwidth]{figs/H(z)_4.5.png}
 \caption{$\abs{H\brak{e^{j\omega}}}$}
 \label{fig:H(z)_3.5}
 \end{figure}
@@ -303,11 +303,11 @@ h(n) \xrightarrow{} 0\text{, when  } n \xrightarrow{} \infty
 
 The following code plots $h\brak{n}$ 
 \begin{lstlisting}
-https://github.com/VINAYKURREiith/Vinay1/blob/master/audio-filter/codes/l.py
+https://github.com/Praful-Kesavadas/signals-and-systems/blob/master/Signals%20and%20systems/Audio-Filter/codes/5.2.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
-\includegraphics[width=\columnwidth]{figs/hn}
+\includegraphics[width=\columnwidth]{figs/hn.png}
 \caption{$h(n)$ as the inverse of $H(z)$}
 \label{fig:hn}
 \end{figure}
@@ -346,7 +346,7 @@ The following code plots Fig. \ref{fig:hndef}. Note that this is the same as Fig
 \ref{fig:hn}. 
 
 \begin{lstlisting}
-https://github.com/VINAYKURREiith/Vinay1/blob/master/audio-filter/codes/k.py
+https://github.com/Praful-Kesavadas/signals-and-systems/blob/master/Signals%20and%20systems/Audio-Filter/codes/hndef.py
 \end{lstlisting}
 \begin{figure}[!ht]
 \centering
@@ -371,7 +371,7 @@ $y(n)$ in  Fig.
 \ref{fig:xnyn}. 
 %
 \begin{lstlisting}
-https://github.com/VINAYKURREiith/Vinay1/blob/master/audio-filter/codes/p.py
+https://github.com/Praful-Kesavadas/signals-and-systems/blob/master/Signals%20and%20systems/Audio-Filter/codes/5.5.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -421,25 +421,25 @@ y\brak{n}={\frac {1}{N}}\sum _{k=0}^{N-1}Y\brak{k}\cdot e^{\j 2\pi kn/N},\quad n
 
 \solution The above three questions are solved using the code below.
 \begin{lstlisting}
-https://github.com/VINAYKURREiith/Vinay1/blob/master/audio-filter/codes/q.py
+https://github.com/Praful-Kesavadas/signals-and-systems/blob/master/Signals%20and%20systems/Audio-Filter/codes/6.123.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
 \includegraphics[width=\columnwidth]{figs/yn_by_dft.png}
 \caption{$y(n)$ obtained from IDFT is plotted }
-\label{fig:yn_verf_5.4}
+\label{fig:yn_verf_6.4}
 \end{figure}
 \item Repeat the previous exercise by computing $X(k), H(k)$ and $y(n)$ through FFT and IFFT.
 \solution The solution of this question can be found in the code below.
 \begin{lstlisting}
-https://github.com/VINAYKURREiith/Vinay1/blob/master/audio-filter/codes/r.py 
+https://github.com/Praful-Kesavadas/signals-and-systems/blob/master/Signals%20and%20systems/Audio-Filter/codes/6.4.py
 \end{lstlisting}
 This code verifies the result by plotting the obtained result with the result obtained by DFT.
 \begin{figure}[H]
 \centering
-\includegraphics[width=\columnwidth]{figs/yn_verf_5.4.png}
+\includegraphics[width=\columnwidth]{figs/yn_verf_6.4.png}
 \caption{$y(n)$ obtained from IDFT and IFFT is plotted and verified}
-\label{fig:yn_verf_5.4}
+\label{fig:yn_verf_6.4}
 \end{figure}
 
 \item Wherever possible, express all the above equations as matrix equations.\\
@@ -476,7 +476,7 @@ Thus we can rewrite  \eqref{eq:fp} as:
 \end{align}
 where the $\odot$ represents the Hadamard product which performs element-wise multiplication.
 \begin{lstlisting}
-https://github.com/VINAYKURREiith/Vinay1/blob/master/audio-filter/codes/s.py
+https://github.com/Praful-Kesavadas/signals-and-systems/blob/master/Signals%20and%20systems/Audio-Filter/codes/6.5.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -506,13 +506,13 @@ where the input signal is $x(n)$ and the output signal is $y(n)$ with initial va
 
 \solution The below code gives the output of an Audio Filter without using the built in function signal.lfilter.
 \begin{lstlisting}
-https://github.com/VINAYKURREiith/Vinay1/blob/master/audio-filter/codes/t.py
+https://github.com/Praful-Kesavadas/signals-and-systems/blob/master/Signals%20and%20systems/Audio-Filter/codes/7.1.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
 \includegraphics[width=\columnwidth]{figs/Audio_Filter_verf.png}
 \caption{Both the outputs using and without using function overlap}
-\label{fig:6.1}
+\label{fig:7.1}
 \end{figure}
 
 \item Repeat all the exercises in the previous sections for the above $a$ and $b$.\\
@@ -556,14 +556,14 @@ h(n) &= \sum_{i}r(i)[p(i)]^nu(n) + \sum_{j}k(j)\delta(n - j)
 \end{align}
 The below code computes the values of $r\brak{i},p\brak{i} , k\brak{i}$ and plots $h\brak{n}$
 \begin{lstlisting}
-https://github.com/VINAYKURREiith/Vinay1/blob/master/audio-filter/codes/u.py
+https://github.com/Praful-Kesavadas/signals-and-systems/blob/master/Signals%20and%20systems/Audio-Filter/codes/7.2.py
 \end{lstlisting}
 \input{tables/table.tex}
 \begin{figure}[H]
 \centering
-\includegraphics[width=\columnwidth]{figs/h(n)_6.2.png}
+\includegraphics[width=\columnwidth]{figs/h(n)_7.2.png}
 \caption{h(n) of Audio Filter}
-\label{fig:6.2_hn}
+\label{fig:7.2_hn}
 \end{figure}
 \textbf{Stability of h(n)}:\\
 According to \eqref{eq:stabilty_condn}
@@ -574,7 +574,7 @@ H(1)&= \sum_{n = 0}^{\infty}h(n)  = \frac{\sum_{k = 0}^{N}b(k)}{\sum_{k = 0}^{M}
 As both $a\brak{k}$ and $b\brak{k}$ are finite length sequences they converge.\\
 The below code plots Filter frequency response
 \begin{lstlisting}
-https://github.com/VINAYKURREiith/Vinay1/blob/master/audio-filter/codes/v.py
+https://github.com/Praful-Kesavadas/signals-and-systems/blob/master/Signals%20and%20systems/Audio-Filter/codes/filter_response.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -586,11 +586,11 @@ https://github.com/VINAYKURREiith/Vinay1/blob/master/audio-filter/codes/v.py
 
 
 \item What is the sampling frequency of the input signal?\\
-\solution The Sampling Frequency is 48.0KHz
+\solution The Sampling Frequency is 44.1KHz
 \item
 What is type, order and  cutoff-frequency of the above butterworth filter
 \\
-\solution The given butterworth filter is lowpass with order=4 and cutoff-frequency=5kHz.
+\solution The given butterworth filter is lowpass with order=4 and cutoff-frequency=1kHz.
 
 \item
 Modify the code with different input parameters and get the best possible output.
